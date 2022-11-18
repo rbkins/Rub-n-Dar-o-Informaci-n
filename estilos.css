@@ -1,0 +1,188 @@
+
+*
+        body{
+            
+            background-color: #E0FFFF;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1{
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            font-size: 50px;
+            color:#678994 ;
+            display:inline-block ;
+            position: relative;
+            text-align: center;
+             }
+
+        h1::after,h1::before{
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 3px;
+            background-color: currentColor;
+            top:0.6em ;
+
+        }    
+        
+        h1::before{
+        left:-140px;
+         }
+         h1::after{
+            right:-140px ;
+         }
+
+      .poeta{
+        margin-top: -25px;
+        font-family: 'Merriweather', serif;
+      }
+       .lineatiempo{
+        position: relative;
+        margin: 50px auto;
+        padding: 40px 0 ;
+        width: 1000px;
+       }
+       .lineatiempo:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: #2F4F4F ;
+       }
+       .lineatiempo ul{
+        margin:0 ;
+        padding: 0;
+       }
+       .lineatiempo ul li{
+
+        list-style: none;
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+       }
+       .lineatiempo ul li:nth-child(odd){
+        float: left;
+        text-align: right;
+        clear: both;
+       }
+       .lineatiempo ul li:nth-child(even){
+        float: right;
+        text-align: left;
+        clear: both;
+       }
+       .contenido{
+        padding-bottom: 20px;
+
+       }
+       .lineatiempo ul li:nth-child(odd)::before{
+        content:"" ;
+        position: absolute;
+        top: 24px;
+        right: -6px;
+        width: 10px;
+        height: 10px;
+        background:#A9A9A9;
+        border-radius: 50px;
+        box-shadow: 0 0 0 3px #ADD8E6;
+       }
+       .lineatiempo ul li:nth-child(even)::before{
+        content:"" ;
+        position: absolute;
+        top: 24px;
+        left: -6px;
+        width: 10px;
+        height: 10px;
+        background:#A9A9A9;
+        border-radius: 50px;
+        box-shadow: 0 0 0 3px #ADD8E6;
+       }
+       .lineatiempo ul li h3{
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        color: #008B8B;
+        font-size: 25px;
+       }
+       .lineatiempo ul li p{
+        margin: 10px 0 0;
+        padding: 0;
+       }
+       .lineatiempo ul li h2{
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        color: #008B8B;
+        font-size: 25px;
+       }
+
+     hr{
+        width: 60%;
+        height: 1px;
+        background: #008B8B;
+        
+     }
+     .borde{
+    width:700px;
+   height:90px;
+   border:2px solid #ADD8E6;
+   border-radius:22px;
+   padding: 20px;
+   margin:0px auto;
+    text-align: center;
+     }
+
+     .Informacion{
+      font-size: 35px;
+      text-align: center;
+      color: #2F4F4F;
+     }
+
+     .transparente{
+      color:#E0FFFF ;
+     }
+
+     #linea{
+      font-size: 28px;
+      text-align: center;
+      color: #2F4F4F;
+     }
+
+     .bar{
+      position: fixed;
+      right: 0;
+      top: 35%;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 100;
+     }
+     .icon{
+      color: white;
+      text-decoration: none;
+      padding: .7rem;
+      display: flex;
+      transition: all .5s;
+     }
+     .icon-instagram{
+      background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+      border-radius: 1rem 0 0 0;
+     }
+    .icon-linkedin{
+      background: #0e76a8;
+      border-radius: 1rem 0 0 0;
+    }
+    .icon:hover{
+      padding-right: 3rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 .5rem rgba(0,0, 0.42);
+    }
